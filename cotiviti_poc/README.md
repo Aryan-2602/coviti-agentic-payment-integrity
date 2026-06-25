@@ -40,12 +40,12 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The reasoning agent (Agent 3) will use a live Claude API call — for both
-the investigation summary and the follow-up Q&A — if `ANTHROPIC_API_KEY`
+The reasoning agent (Agent 3) will use a live OpenAI API call — for both
+the investigation summary and the follow-up Q&A — if `OPENAI_API_KEY`
 is set in your environment:
 
 ```bash
-export ANTHROPIC_API_KEY=your_key_here
+export OPENAI_API_KEY=your_key_here
 ```
 
 If no key is set, it automatically falls back to a deterministic template
