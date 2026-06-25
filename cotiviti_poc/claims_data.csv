@@ -1,0 +1,605 @@
+claim_id,provider_id,patient_id,procedure_code,procedure_desc,claim_date,billing_amount,anomaly_flag_truth
+CLM-00001,PRV-1006,PT-0035,93000,"Electrocardiogram, routine",2026-03-16,36.12,normal
+CLM-00002,PRV-1003,PT-0002,99214,"Office visit, established patient, moderate complexity",2026-04-10,132.85,normal
+CLM-00003,PRV-1021,PT-0191,99214,"Office visit, established patient, moderate complexity",2026-03-27,119.91,normal
+CLM-00004,PRV-1011,PT-0270,99214,"Office visit, established patient, moderate complexity",2026-03-01,151.7,normal
+CLM-00005,PRV-1014,PT-0190,71046,"Chest X-ray, 2 views",2026-01-30,57.77,normal
+CLM-00006,PRV-1015,PT-0053,80053,Comprehensive metabolic panel,2026-02-10,33.44,volume_spike
+CLM-00007,PRV-1012,PT-0301,99213,"Office visit, established patient, low complexity",2026-02-14,94.77,normal
+CLM-00008,PRV-1006,PT-0136,99213,"Office visit, established patient, low complexity",2026-04-26,74.21,normal
+CLM-00009,PRV-1010,PT-0163,99215,"Office visit, established patient, high complexity",2026-04-17,162.99,normal
+CLM-00010,PRV-1004,PT-0041,99214,"Office visit, established patient, moderate complexity",2026-02-23,121.42,normal
+CLM-00011,PRV-1008,PT-0048,93000,"Electrocardiogram, routine",2026-02-19,40.68,normal
+CLM-00012,PRV-1023,PT-0360,80053,Comprehensive metabolic panel,2026-04-20,32.84,normal
+CLM-00013,PRV-1002,PT-0131,99213,"Office visit, established patient, low complexity",2026-02-27,98.77,normal
+CLM-00014,PRV-1022,PT-0283,20610,"Joint injection, major joint",2026-02-08,103.38,normal
+CLM-00015,PRV-1014,PT-0179,99214,"Office visit, established patient, moderate complexity",2026-01-04,112.08,normal
+CLM-00016,PRV-1006,PT-0096,99213,"Office visit, established patient, low complexity",2026-02-17,79.59,normal
+CLM-00017,PRV-1004,PT-0143,20610,"Joint injection, major joint",2026-04-01,101.17,normal
+CLM-00018,PRV-1003,PT-0187,80053,Comprehensive metabolic panel,2026-01-12,36.74,normal
+CLM-00019,PRV-1001,PT-0134,99214,"Office visit, established patient, moderate complexity",2026-05-02,146.94,normal
+CLM-00020,PRV-1011,PT-0331,93000,"Electrocardiogram, routine",2026-03-04,44.84,normal
+CLM-00021,PRV-1022,PT-0190,93000,"Electrocardiogram, routine",2026-02-23,36.04,normal
+CLM-00022,PRV-1024,PT-0116,99215,"Office visit, established patient, high complexity",2026-03-06,179.87,normal
+CLM-00023,PRV-1002,PT-0137,20610,"Joint injection, major joint",2026-01-25,117.48,normal
+CLM-00024,PRV-1000,PT-0152,99215,"Office visit, established patient, high complexity",2026-02-10,185.92,normal
+CLM-00025,PRV-1021,PT-0318,99213,"Office visit, established patient, low complexity",2026-03-02,84.05,normal
+CLM-00026,PRV-1019,PT-0386,93000,"Electrocardiogram, routine",2026-02-07,38.29,normal
+CLM-00027,PRV-1004,PT-0187,99213,"Office visit, established patient, low complexity",2026-05-30,81.6,normal
+CLM-00028,PRV-1001,PT-0224,93000,"Electrocardiogram, routine",2026-01-08,47.26,normal
+CLM-00029,PRV-1018,PT-0172,71046,"Chest X-ray, 2 views",2026-01-22,63.34,normal
+CLM-00030,PRV-1005,PT-0203,20610,"Joint injection, major joint",2026-04-11,97.36,duplicate_billing
+CLM-00031,PRV-1005,PT-0203,20610,"Joint injection, major joint",2026-04-11,97.36,duplicate_billing
+CLM-00032,PRV-1005,PT-0198,80053,Comprehensive metabolic panel,2026-04-05,31.07,normal
+CLM-00033,PRV-1015,PT-0187,99213,"Office visit, established patient, low complexity",2026-01-23,75.28,volume_spike
+CLM-00034,PRV-1019,PT-0346,93000,"Electrocardiogram, routine",2026-04-12,37.54,normal
+CLM-00035,PRV-1018,PT-0308,93000,"Electrocardiogram, routine",2026-04-07,40.91,normal
+CLM-00036,PRV-1007,PT-0129,20610,"Joint injection, major joint",2026-05-21,124.23,normal
+CLM-00037,PRV-1024,PT-0298,99213,"Office visit, established patient, low complexity",2026-02-01,86.66,normal
+CLM-00038,PRV-1015,PT-0060,99214,"Office visit, established patient, moderate complexity",2026-05-28,120.54,volume_spike
+CLM-00039,PRV-1011,PT-0009,80053,Comprehensive metabolic panel,2026-05-16,39.05,normal
+CLM-00040,PRV-1018,PT-0054,99215,"Office visit, established patient, high complexity",2026-05-09,186.29,normal
+CLM-00041,PRV-1023,PT-0104,93000,"Electrocardiogram, routine",2026-01-13,38.8,normal
+CLM-00042,PRV-1002,PT-0153,71046,"Chest X-ray, 2 views",2026-05-22,66.08,normal
+CLM-00043,PRV-1013,PT-0163,99214,"Office visit, established patient, moderate complexity",2026-03-14,120.59,normal
+CLM-00044,PRV-1008,PT-0289,93000,"Electrocardiogram, routine",2026-04-17,41.19,normal
+CLM-00045,PRV-1015,PT-0392,93000,"Electrocardiogram, routine",2026-02-24,38.06,volume_spike
+CLM-00046,PRV-1000,PT-0375,93000,"Electrocardiogram, routine",2026-03-18,37.53,normal
+CLM-00047,PRV-1005,PT-0264,71046,"Chest X-ray, 2 views",2026-02-28,59.06,normal
+CLM-00048,PRV-1000,PT-0317,93000,"Electrocardiogram, routine",2026-04-11,38.49,normal
+CLM-00049,PRV-1003,PT-0017,99215,"Office visit, established patient, high complexity",2026-04-26,199.9,normal
+CLM-00050,PRV-1013,PT-0380,80053,Comprehensive metabolic panel,2026-05-13,30.43,normal
+CLM-00051,PRV-1023,PT-0181,80053,Comprehensive metabolic panel,2026-03-06,33.84,normal
+CLM-00052,PRV-1000,PT-0161,93000,"Electrocardiogram, routine",2026-02-14,37.79,normal
+CLM-00053,PRV-1017,PT-0054,99213,"Office visit, established patient, low complexity",2026-03-01,92.45,normal
+CLM-00054,PRV-1007,PT-0288,71046,"Chest X-ray, 2 views",2026-01-15,73.38,normal
+CLM-00055,PRV-1022,PT-0386,99214,"Office visit, established patient, moderate complexity",2026-02-08,119.73,normal
+CLM-00056,PRV-1007,PT-0246,99213,"Office visit, established patient, low complexity",2026-01-21,98.48,normal
+CLM-00057,PRV-1009,PT-0306,20610,"Joint injection, major joint",2026-03-04,121.16,normal
+CLM-00058,PRV-1012,PT-0313,93000,"Electrocardiogram, routine",2026-03-18,44.55,normal
+CLM-00059,PRV-1019,PT-0142,99213,"Office visit, established patient, low complexity",2026-01-11,87.65,normal
+CLM-00060,PRV-1022,PT-0322,20610,"Joint injection, major joint",2026-02-26,102.51,normal
+CLM-00061,PRV-1021,PT-0063,99215,"Office visit, established patient, high complexity",2026-03-11,172.94,normal
+CLM-00062,PRV-1021,PT-0305,99214,"Office visit, established patient, moderate complexity",2026-05-10,110.58,normal
+CLM-00063,PRV-1005,PT-0101,20610,"Joint injection, major joint",2026-02-24,98.87,normal
+CLM-00064,PRV-1011,PT-0196,93000,"Electrocardiogram, routine",2026-04-04,47.2,normal
+CLM-00065,PRV-1019,PT-0311,71046,"Chest X-ray, 2 views",2026-03-23,58.73,normal
+CLM-00066,PRV-1015,PT-0106,80053,Comprehensive metabolic panel,2026-05-26,32.03,volume_spike
+CLM-00067,PRV-1018,PT-0346,93000,"Electrocardiogram, routine",2026-04-22,37.32,normal
+CLM-00068,PRV-1020,PT-0393,71046,"Chest X-ray, 2 views",2026-05-06,68.45,normal
+CLM-00069,PRV-1000,PT-0239,99214,"Office visit, established patient, moderate complexity",2026-05-18,214.57,upcoding
+CLM-00070,PRV-1015,PT-0373,99213,"Office visit, established patient, low complexity",2026-04-10,82.72,volume_spike
+CLM-00071,PRV-1004,PT-0076,71046,"Chest X-ray, 2 views",2026-04-20,58.68,normal
+CLM-00072,PRV-1018,PT-0285,80053,Comprehensive metabolic panel,2026-01-19,32.97,normal
+CLM-00073,PRV-1004,PT-0238,20610,"Joint injection, major joint",2026-01-07,103.38,normal
+CLM-00074,PRV-1004,PT-0341,93000,"Electrocardiogram, routine",2026-01-03,35.78,normal
+CLM-00075,PRV-1000,PT-0023,71046,"Chest X-ray, 2 views",2026-03-07,59.73,normal
+CLM-00076,PRV-1021,PT-0180,80053,Comprehensive metabolic panel,2026-05-14,30.82,normal
+CLM-00077,PRV-1018,PT-0325,99214,"Office visit, established patient, moderate complexity",2026-03-17,129.69,normal
+CLM-00078,PRV-1015,PT-0384,20610,"Joint injection, major joint",2026-05-22,103.95,volume_spike
+CLM-00079,PRV-1011,PT-0033,99214,"Office visit, established patient, moderate complexity",2026-03-28,147.71,normal
+CLM-00080,PRV-1018,PT-0323,99215,"Office visit, established patient, high complexity",2026-05-22,187.03,normal
+CLM-00081,PRV-1007,PT-0285,99214,"Office visit, established patient, moderate complexity",2026-02-01,138.07,normal
+CLM-00082,PRV-1013,PT-0242,99214,"Office visit, established patient, moderate complexity",2026-01-06,120.96,normal
+CLM-00083,PRV-1016,PT-0090,99214,"Office visit, established patient, moderate complexity",2026-02-17,120.42,normal
+CLM-00084,PRV-1018,PT-0314,99213,"Office visit, established patient, low complexity",2026-03-16,89.9,normal
+CLM-00085,PRV-1012,PT-0217,99215,"Office visit, established patient, high complexity",2026-05-12,209.62,normal
+CLM-00086,PRV-1024,PT-0192,93000,"Electrocardiogram, routine",2026-01-27,39.77,normal
+CLM-00087,PRV-1002,PT-0096,93000,"Electrocardiogram, routine",2026-02-25,42.1,normal
+CLM-00088,PRV-1004,PT-0013,93000,"Electrocardiogram, routine",2026-03-06,36.73,normal
+CLM-00089,PRV-1002,PT-0369,99213,"Office visit, established patient, low complexity",2026-02-26,96.31,normal
+CLM-00090,PRV-1015,PT-0187,99213,"Office visit, established patient, low complexity",2026-02-18,74.7,volume_spike
+CLM-00091,PRV-1008,PT-0284,99215,"Office visit, established patient, high complexity",2026-01-14,199.19,normal
+CLM-00092,PRV-1019,PT-0144,99215,"Office visit, established patient, high complexity",2026-03-15,172.52,normal
+CLM-00093,PRV-1002,PT-0379,93000,"Electrocardiogram, routine",2026-02-19,41.55,normal
+CLM-00094,PRV-1020,PT-0039,20610,"Joint injection, major joint",2026-04-28,109.04,normal
+CLM-00095,PRV-1009,PT-0223,99214,"Office visit, established patient, moderate complexity",2026-01-09,131.98,normal
+CLM-00096,PRV-1002,PT-0331,20610,"Joint injection, major joint",2026-03-23,113.15,normal
+CLM-00097,PRV-1011,PT-0253,99213,"Office visit, established patient, low complexity",2026-04-25,106.16,normal
+CLM-00098,PRV-1013,PT-0393,80053,Comprehensive metabolic panel,2026-02-03,33.01,normal
+CLM-00099,PRV-1001,PT-0339,80053,Comprehensive metabolic panel,2026-03-18,40.06,normal
+CLM-00100,PRV-1012,PT-0145,99213,"Office visit, established patient, low complexity",2026-05-13,103.4,normal
+CLM-00101,PRV-1024,PT-0070,80053,Comprehensive metabolic panel,2026-04-24,35.26,normal
+CLM-00102,PRV-1018,PT-0167,80053,Comprehensive metabolic panel,2026-02-26,34.03,normal
+CLM-00103,PRV-1018,PT-0173,20610,"Joint injection, major joint",2026-03-07,102.49,normal
+CLM-00104,PRV-1019,PT-0383,93000,"Electrocardiogram, routine",2026-04-26,38.05,normal
+CLM-00105,PRV-1000,PT-0190,99215,"Office visit, established patient, high complexity",2026-03-29,176.26,normal
+CLM-00106,PRV-1016,PT-0117,99213,"Office visit, established patient, low complexity",2026-05-11,88.64,normal
+CLM-00107,PRV-1011,PT-0317,80053,Comprehensive metabolic panel,2026-05-26,39.23,normal
+CLM-00108,PRV-1015,PT-0252,71046,"Chest X-ray, 2 views",2026-05-19,56.62,volume_spike
+CLM-00109,PRV-1019,PT-0233,99213,"Office visit, established patient, low complexity",2026-03-20,81.97,normal
+CLM-00110,PRV-1014,PT-0054,20610,"Joint injection, major joint",2026-05-30,100.34,normal
+CLM-00111,PRV-1015,PT-0012,20610,"Joint injection, major joint",2026-01-07,99.52,volume_spike
+CLM-00112,PRV-1005,PT-0373,93000,"Electrocardiogram, routine",2026-01-17,35.07,duplicate_billing
+CLM-00113,PRV-1005,PT-0373,93000,"Electrocardiogram, routine",2026-01-17,35.07,duplicate_billing
+CLM-00114,PRV-1007,PT-0028,99214,"Office visit, established patient, moderate complexity",2026-02-04,138.19,normal
+CLM-00115,PRV-1008,PT-0145,93000,"Electrocardiogram, routine",2026-05-28,40.31,normal
+CLM-00116,PRV-1020,PT-0240,93000,"Electrocardiogram, routine",2026-04-01,39.95,normal
+CLM-00117,PRV-1013,PT-0082,99215,"Office visit, established patient, high complexity",2026-05-04,167.63,normal
+CLM-00118,PRV-1004,PT-0010,20610,"Joint injection, major joint",2026-05-18,102.92,normal
+CLM-00119,PRV-1017,PT-0119,99215,"Office visit, established patient, high complexity",2026-01-07,184.72,normal
+CLM-00120,PRV-1021,PT-0239,99213,"Office visit, established patient, low complexity",2026-03-14,77.46,normal
+CLM-00121,PRV-1020,PT-0342,99214,"Office visit, established patient, moderate complexity",2026-02-27,138.78,normal
+CLM-00122,PRV-1016,PT-0105,80053,Comprehensive metabolic panel,2026-01-10,32.66,normal
+CLM-00123,PRV-1000,PT-0006,80053,Comprehensive metabolic panel,2026-01-09,34.33,normal
+CLM-00124,PRV-1004,PT-0259,20610,"Joint injection, major joint",2026-04-23,99.2,normal
+CLM-00125,PRV-1004,PT-0083,80053,Comprehensive metabolic panel,2026-05-22,30.6,normal
+CLM-00126,PRV-1013,PT-0051,99213,"Office visit, established patient, low complexity",2026-01-20,80.38,normal
+CLM-00127,PRV-1003,PT-0288,71046,"Chest X-ray, 2 views",2026-05-12,63.89,normal
+CLM-00128,PRV-1007,PT-0162,20610,"Joint injection, major joint",2026-04-11,121.79,normal
+CLM-00129,PRV-1002,PT-0054,99215,"Office visit, established patient, high complexity",2026-02-16,207.14,normal
+CLM-00130,PRV-1024,PT-0303,99213,"Office visit, established patient, low complexity",2026-01-21,88.11,normal
+CLM-00131,PRV-1004,PT-0075,80053,Comprehensive metabolic panel,2026-04-06,30.49,normal
+CLM-00132,PRV-1005,PT-0306,93000,"Electrocardiogram, routine",2026-05-28,36.19,normal
+CLM-00133,PRV-1018,PT-0249,20610,"Joint injection, major joint",2026-04-19,107.9,normal
+CLM-00134,PRV-1023,PT-0247,20610,"Joint injection, major joint",2026-03-01,105.84,normal
+CLM-00135,PRV-1016,PT-0138,80053,Comprehensive metabolic panel,2026-04-30,34.35,normal
+CLM-00136,PRV-1009,PT-0069,99213,"Office visit, established patient, low complexity",2026-02-08,100.21,normal
+CLM-00137,PRV-1020,PT-0235,99214,"Office visit, established patient, moderate complexity",2026-02-19,135.43,normal
+CLM-00138,PRV-1010,PT-0151,99215,"Office visit, established patient, high complexity",2026-03-22,152.5,normal
+CLM-00139,PRV-1010,PT-0388,71046,"Chest X-ray, 2 views",2026-04-15,53.88,normal
+CLM-00140,PRV-1023,PT-0195,99213,"Office visit, established patient, low complexity",2026-05-15,86.52,normal
+CLM-00141,PRV-1017,PT-0277,80053,Comprehensive metabolic panel,2026-01-29,34.09,normal
+CLM-00142,PRV-1009,PT-0326,80053,Comprehensive metabolic panel,2026-01-05,35.77,normal
+CLM-00143,PRV-1008,PT-0034,93000,"Electrocardiogram, routine",2026-01-31,39.68,normal
+CLM-00144,PRV-1012,PT-0249,99215,"Office visit, established patient, high complexity",2026-01-06,203.07,normal
+CLM-00145,PRV-1021,PT-0107,20610,"Joint injection, major joint",2026-03-18,102.23,normal
+CLM-00146,PRV-1016,PT-0008,99214,"Office visit, established patient, moderate complexity",2026-05-11,125.4,normal
+CLM-00147,PRV-1019,PT-0056,20610,"Joint injection, major joint",2026-03-22,102.95,normal
+CLM-00148,PRV-1022,PT-0365,71046,"Chest X-ray, 2 views",2026-03-11,58.28,normal
+CLM-00149,PRV-1023,PT-0111,99215,"Office visit, established patient, high complexity",2026-04-18,183.7,normal
+CLM-00150,PRV-1010,PT-0274,20610,"Joint injection, major joint",2026-01-05,93.68,normal
+CLM-00151,PRV-1002,PT-0119,99215,"Office visit, established patient, high complexity",2026-02-06,195.45,normal
+CLM-00152,PRV-1009,PT-0231,20610,"Joint injection, major joint",2026-02-18,112.07,normal
+CLM-00153,PRV-1011,PT-0212,99213,"Office visit, established patient, low complexity",2026-05-14,102.42,normal
+CLM-00154,PRV-1009,PT-0146,99215,"Office visit, established patient, high complexity",2026-04-08,188.43,normal
+CLM-00155,PRV-1014,PT-0264,71046,"Chest X-ray, 2 views",2026-03-30,59.3,normal
+CLM-00156,PRV-1011,PT-0101,99215,"Office visit, established patient, high complexity",2026-02-26,208.19,normal
+CLM-00157,PRV-1001,PT-0365,99215,"Office visit, established patient, high complexity",2026-02-23,206.45,normal
+CLM-00158,PRV-1024,PT-0277,99213,"Office visit, established patient, low complexity",2026-01-02,85.73,normal
+CLM-00159,PRV-1022,PT-0318,93000,"Electrocardiogram, routine",2026-05-08,38.65,normal
+CLM-00160,PRV-1023,PT-0387,20610,"Joint injection, major joint",2026-05-07,105.85,normal
+CLM-00161,PRV-1007,PT-0223,80053,Comprehensive metabolic panel,2026-05-28,40.39,normal
+CLM-00162,PRV-1019,PT-0335,93000,"Electrocardiogram, routine",2026-05-18,38.68,normal
+CLM-00163,PRV-1016,PT-0062,71046,"Chest X-ray, 2 views",2026-01-26,63.81,normal
+CLM-00164,PRV-1014,PT-0173,99215,"Office visit, established patient, high complexity",2026-03-27,171.85,normal
+CLM-00165,PRV-1005,PT-0275,99214,"Office visit, established patient, moderate complexity",2026-02-18,113.08,normal
+CLM-00166,PRV-1011,PT-0142,20610,"Joint injection, major joint",2026-04-17,122.85,normal
+CLM-00167,PRV-1004,PT-0356,71046,"Chest X-ray, 2 views",2026-01-24,57.25,normal
+CLM-00168,PRV-1002,PT-0010,99213,"Office visit, established patient, low complexity",2026-02-25,96.73,normal
+CLM-00169,PRV-1009,PT-0168,93000,"Electrocardiogram, routine",2026-01-31,43.81,normal
+CLM-00170,PRV-1000,PT-0273,20610,"Joint injection, major joint",2026-04-13,101.8,normal
+CLM-00171,PRV-1014,PT-0094,71046,"Chest X-ray, 2 views",2026-03-03,56.48,normal
+CLM-00172,PRV-1004,PT-0334,71046,"Chest X-ray, 2 views",2026-04-22,60.82,normal
+CLM-00173,PRV-1010,PT-0035,99213,"Office visit, established patient, low complexity",2026-01-31,80.34,normal
+CLM-00174,PRV-1021,PT-0328,93000,"Electrocardiogram, routine",2026-05-07,36.84,normal
+CLM-00175,PRV-1004,PT-0291,71046,"Chest X-ray, 2 views",2026-04-30,56.34,normal
+CLM-00176,PRV-1004,PT-0062,99215,"Office visit, established patient, high complexity",2026-04-10,163.57,normal
+CLM-00177,PRV-1012,PT-0296,99214,"Office visit, established patient, moderate complexity",2026-02-28,142.28,normal
+CLM-00178,PRV-1007,PT-0125,71046,"Chest X-ray, 2 views",2026-05-15,70.71,normal
+CLM-00179,PRV-1022,PT-0153,20610,"Joint injection, major joint",2026-03-17,101.65,normal
+CLM-00180,PRV-1014,PT-0309,20610,"Joint injection, major joint",2026-03-21,103.54,normal
+CLM-00181,PRV-1018,PT-0134,20610,"Joint injection, major joint",2026-01-18,105.95,normal
+CLM-00182,PRV-1018,PT-0015,99214,"Office visit, established patient, moderate complexity",2026-01-21,132.17,normal
+CLM-00183,PRV-1000,PT-0157,93000,"Electrocardiogram, routine",2026-04-22,37.15,normal
+CLM-00184,PRV-1000,PT-0289,80053,Comprehensive metabolic panel,2026-02-07,32.11,normal
+CLM-00185,PRV-1021,PT-0123,99214,"Office visit, established patient, moderate complexity",2026-04-25,118.89,normal
+CLM-00186,PRV-1021,PT-0303,71046,"Chest X-ray, 2 views",2026-03-22,59.98,normal
+CLM-00187,PRV-1023,PT-0157,93000,"Electrocardiogram, routine",2026-03-01,38.55,normal
+CLM-00188,PRV-1014,PT-0130,93000,"Electrocardiogram, routine",2026-04-19,34.42,normal
+CLM-00189,PRV-1018,PT-0282,99215,"Office visit, established patient, high complexity",2026-03-26,176.72,normal
+CLM-00190,PRV-1004,PT-0330,93000,"Electrocardiogram, routine",2026-01-28,35.31,normal
+CLM-00191,PRV-1005,PT-0302,20610,"Joint injection, major joint",2026-03-11,99.78,normal
+CLM-00192,PRV-1007,PT-0111,71046,"Chest X-ray, 2 views",2026-01-16,73.77,normal
+CLM-00193,PRV-1010,PT-0324,93000,"Electrocardiogram, routine",2026-01-16,35.24,normal
+CLM-00194,PRV-1004,PT-0092,20610,"Joint injection, major joint",2026-01-23,97.41,normal
+CLM-00195,PRV-1008,PT-0296,71046,"Chest X-ray, 2 views",2026-01-12,69.25,normal
+CLM-00196,PRV-1010,PT-0101,20610,"Joint injection, major joint",2026-01-19,98.75,normal
+CLM-00197,PRV-1013,PT-0313,93000,"Electrocardiogram, routine",2026-01-19,35.93,normal
+CLM-00198,PRV-1021,PT-0399,20610,"Joint injection, major joint",2026-02-04,97.11,normal
+CLM-00199,PRV-1008,PT-0313,80053,Comprehensive metabolic panel,2026-02-20,34.28,normal
+CLM-00200,PRV-1008,PT-0025,99215,"Office visit, established patient, high complexity",2026-03-01,197.54,normal
+CLM-00201,PRV-1005,PT-0347,99214,"Office visit, established patient, moderate complexity",2026-03-11,116.03,duplicate_billing
+CLM-00202,PRV-1005,PT-0347,99214,"Office visit, established patient, moderate complexity",2026-03-11,116.03,duplicate_billing
+CLM-00203,PRV-1011,PT-0152,99215,"Office visit, established patient, high complexity",2026-01-22,212.72,normal
+CLM-00204,PRV-1019,PT-0161,71046,"Chest X-ray, 2 views",2026-01-06,60.09,normal
+CLM-00205,PRV-1010,PT-0370,71046,"Chest X-ray, 2 views",2026-02-03,56.56,normal
+CLM-00206,PRV-1006,PT-0177,99213,"Office visit, established patient, low complexity",2026-05-25,78.52,normal
+CLM-00207,PRV-1021,PT-0360,93000,"Electrocardiogram, routine",2026-03-22,35.68,normal
+CLM-00208,PRV-1000,PT-0379,80053,Comprehensive metabolic panel,2026-03-01,34.69,normal
+CLM-00209,PRV-1016,PT-0144,80053,Comprehensive metabolic panel,2026-02-26,33.16,normal
+CLM-00210,PRV-1017,PT-0175,99213,"Office visit, established patient, low complexity",2026-04-27,90.92,normal
+CLM-00211,PRV-1021,PT-0222,93000,"Electrocardiogram, routine",2026-03-14,35.89,normal
+CLM-00212,PRV-1003,PT-0055,99213,"Office visit, established patient, low complexity",2026-02-20,96.8,normal
+CLM-00213,PRV-1009,PT-0162,99214,"Office visit, established patient, moderate complexity",2026-05-15,136.85,normal
+CLM-00214,PRV-1022,PT-0178,20610,"Joint injection, major joint",2026-01-24,106.93,normal
+CLM-00215,PRV-1007,PT-0323,99213,"Office visit, established patient, low complexity",2026-03-24,97.2,normal
+CLM-00216,PRV-1007,PT-0229,71046,"Chest X-ray, 2 views",2026-02-20,69.82,normal
+CLM-00217,PRV-1000,PT-0291,93000,"Electrocardiogram, routine",2026-02-05,37.51,normal
+CLM-00218,PRV-1013,PT-0165,71046,"Chest X-ray, 2 views",2026-05-05,57.26,normal
+CLM-00219,PRV-1013,PT-0007,20610,"Joint injection, major joint",2026-02-18,101.85,normal
+CLM-00220,PRV-1000,PT-0112,20610,"Joint injection, major joint",2026-05-08,102.49,normal
+CLM-00221,PRV-1003,PT-0002,80053,Comprehensive metabolic panel,2026-03-05,37.52,normal
+CLM-00222,PRV-1004,PT-0386,93000,"Electrocardiogram, routine",2026-02-20,35.38,normal
+CLM-00223,PRV-1022,PT-0293,93000,"Electrocardiogram, routine",2026-05-05,37.17,normal
+CLM-00224,PRV-1008,PT-0355,99214,"Office visit, established patient, moderate complexity",2026-05-10,139.95,normal
+CLM-00225,PRV-1021,PT-0202,93000,"Electrocardiogram, routine",2026-01-22,35.91,normal
+CLM-00226,PRV-1013,PT-0209,20610,"Joint injection, major joint",2026-04-30,100.35,normal
+CLM-00227,PRV-1016,PT-0237,71046,"Chest X-ray, 2 views",2026-04-22,60.59,normal
+CLM-00228,PRV-1008,PT-0004,71046,"Chest X-ray, 2 views",2026-04-07,64.51,normal
+CLM-00229,PRV-1012,PT-0075,99214,"Office visit, established patient, moderate complexity",2026-02-10,147.58,normal
+CLM-00230,PRV-1020,PT-0034,99214,"Office visit, established patient, moderate complexity",2026-03-28,135.09,normal
+CLM-00231,PRV-1024,PT-0087,71046,"Chest X-ray, 2 views",2026-05-05,61.62,normal
+CLM-00232,PRV-1021,PT-0287,80053,Comprehensive metabolic panel,2026-02-09,32.38,normal
+CLM-00233,PRV-1007,PT-0309,99214,"Office visit, established patient, moderate complexity",2026-04-01,139.6,normal
+CLM-00234,PRV-1012,PT-0190,99213,"Office visit, established patient, low complexity",2026-03-04,99.16,normal
+CLM-00235,PRV-1001,PT-0193,93000,"Electrocardiogram, routine",2026-05-24,43.51,normal
+CLM-00236,PRV-1003,PT-0149,99215,"Office visit, established patient, high complexity",2026-02-06,196.9,normal
+CLM-00237,PRV-1010,PT-0295,93000,"Electrocardiogram, routine",2026-04-18,34.63,normal
+CLM-00238,PRV-1021,PT-0152,99214,"Office visit, established patient, moderate complexity",2026-03-01,121.0,normal
+CLM-00239,PRV-1004,PT-0239,99213,"Office visit, established patient, low complexity",2026-02-10,78.79,normal
+CLM-00240,PRV-1002,PT-0365,93000,"Electrocardiogram, routine",2026-01-08,41.31,normal
+CLM-00241,PRV-1008,PT-0073,99214,"Office visit, established patient, moderate complexity",2026-03-13,128.25,normal
+CLM-00242,PRV-1016,PT-0104,99213,"Office visit, established patient, low complexity",2026-03-16,84.16,normal
+CLM-00243,PRV-1006,PT-0229,99215,"Office visit, established patient, high complexity",2026-05-03,152.49,normal
+CLM-00244,PRV-1018,PT-0012,71046,"Chest X-ray, 2 views",2026-01-01,62.79,normal
+CLM-00245,PRV-1011,PT-0017,99215,"Office visit, established patient, high complexity",2026-05-18,220.58,normal
+CLM-00246,PRV-1022,PT-0318,99213,"Office visit, established patient, low complexity",2026-01-28,88.25,normal
+CLM-00247,PRV-1018,PT-0215,20610,"Joint injection, major joint",2026-05-01,110.17,normal
+CLM-00248,PRV-1015,PT-0089,71046,"Chest X-ray, 2 views",2026-05-28,60.84,volume_spike
+CLM-00249,PRV-1008,PT-0288,80053,Comprehensive metabolic panel,2026-04-11,36.8,normal
+CLM-00250,PRV-1006,PT-0086,99213,"Office visit, established patient, low complexity",2026-01-28,81.31,normal
+CLM-00251,PRV-1013,PT-0137,20610,"Joint injection, major joint",2026-04-15,97.42,normal
+CLM-00252,PRV-1007,PT-0082,99214,"Office visit, established patient, moderate complexity",2026-03-05,147.82,normal
+CLM-00253,PRV-1019,PT-0103,20610,"Joint injection, major joint",2026-03-10,98.34,normal
+CLM-00254,PRV-1023,PT-0301,99215,"Office visit, established patient, high complexity",2026-03-26,170.07,normal
+CLM-00255,PRV-1004,PT-0183,99215,"Office visit, established patient, high complexity",2026-02-20,164.32,normal
+CLM-00256,PRV-1006,PT-0004,20610,"Joint injection, major joint",2026-05-01,98.19,normal
+CLM-00257,PRV-1024,PT-0016,80053,Comprehensive metabolic panel,2026-04-04,34.29,normal
+CLM-00258,PRV-1011,PT-0227,71046,"Chest X-ray, 2 views",2026-03-04,76.91,normal
+CLM-00259,PRV-1022,PT-0096,80053,Comprehensive metabolic panel,2026-03-21,33.8,normal
+CLM-00260,PRV-1006,PT-0318,71046,"Chest X-ray, 2 views",2026-02-22,56.27,normal
+CLM-00261,PRV-1024,PT-0266,93000,"Electrocardiogram, routine",2026-05-28,37.86,normal
+CLM-00262,PRV-1006,PT-0177,93000,"Electrocardiogram, routine",2026-04-21,33.35,normal
+CLM-00263,PRV-1013,PT-0146,71046,"Chest X-ray, 2 views",2026-05-08,57.81,normal
+CLM-00264,PRV-1024,PT-0073,99213,"Office visit, established patient, low complexity",2026-05-17,85.35,normal
+CLM-00265,PRV-1024,PT-0293,93000,"Electrocardiogram, routine",2026-02-02,40.6,normal
+CLM-00266,PRV-1010,PT-0319,93000,"Electrocardiogram, routine",2026-03-04,35.77,normal
+CLM-00267,PRV-1010,PT-0153,71046,"Chest X-ray, 2 views",2026-04-03,57.01,normal
+CLM-00268,PRV-1003,PT-0349,99215,"Office visit, established patient, high complexity",2026-03-02,193.33,normal
+CLM-00269,PRV-1020,PT-0330,99215,"Office visit, established patient, high complexity",2026-03-18,182.55,normal
+CLM-00270,PRV-1024,PT-0259,99214,"Office visit, established patient, moderate complexity",2026-01-06,132.47,normal
+CLM-00271,PRV-1004,PT-0215,80053,Comprehensive metabolic panel,2026-04-05,32.59,normal
+CLM-00272,PRV-1002,PT-0061,93000,"Electrocardiogram, routine",2026-05-30,41.76,normal
+CLM-00273,PRV-1002,PT-0145,99214,"Office visit, established patient, moderate complexity",2026-03-15,134.24,normal
+CLM-00274,PRV-1002,PT-0381,71046,"Chest X-ray, 2 views",2026-04-04,69.78,normal
+CLM-00275,PRV-1008,PT-0098,93000,"Electrocardiogram, routine",2026-03-29,41.04,normal
+CLM-00276,PRV-1023,PT-0029,99215,"Office visit, established patient, high complexity",2026-02-10,184.49,normal
+CLM-00277,PRV-1024,PT-0009,99214,"Office visit, established patient, moderate complexity",2026-05-10,126.09,normal
+CLM-00278,PRV-1024,PT-0226,80053,Comprehensive metabolic panel,2026-04-21,34.22,normal
+CLM-00279,PRV-1014,PT-0389,71046,"Chest X-ray, 2 views",2026-02-08,56.14,normal
+CLM-00280,PRV-1017,PT-0176,71046,"Chest X-ray, 2 views",2026-05-25,66.68,normal
+CLM-00281,PRV-1004,PT-0040,80053,Comprehensive metabolic panel,2026-05-08,32.59,normal
+CLM-00282,PRV-1018,PT-0040,99214,"Office visit, established patient, moderate complexity",2026-03-27,129.61,normal
+CLM-00283,PRV-1012,PT-0216,80053,Comprehensive metabolic panel,2026-04-21,39.64,normal
+CLM-00284,PRV-1007,PT-0059,93000,"Electrocardiogram, routine",2026-05-08,42.89,normal
+CLM-00285,PRV-1012,PT-0181,99215,"Office visit, established patient, high complexity",2026-02-05,207.12,normal
+CLM-00286,PRV-1005,PT-0235,93000,"Electrocardiogram, routine",2026-01-24,37.53,normal
+CLM-00287,PRV-1022,PT-0363,99214,"Office visit, established patient, moderate complexity",2026-01-20,118.59,normal
+CLM-00288,PRV-1006,PT-0258,20610,"Joint injection, major joint",2026-01-01,98.59,normal
+CLM-00289,PRV-1011,PT-0013,20610,"Joint injection, major joint",2026-01-29,126.97,normal
+CLM-00290,PRV-1016,PT-0223,99213,"Office visit, established patient, low complexity",2026-04-05,83.67,normal
+CLM-00291,PRV-1023,PT-0326,80053,Comprehensive metabolic panel,2026-04-27,32.87,normal
+CLM-00292,PRV-1006,PT-0319,99214,"Office visit, established patient, moderate complexity",2026-03-06,111.55,normal
+CLM-00293,PRV-1014,PT-0278,71046,"Chest X-ray, 2 views",2026-04-24,61.37,normal
+CLM-00294,PRV-1003,PT-0192,99214,"Office visit, established patient, moderate complexity",2026-05-23,136.63,normal
+CLM-00295,PRV-1021,PT-0193,99213,"Office visit, established patient, low complexity",2026-03-29,76.72,normal
+CLM-00296,PRV-1023,PT-0270,99215,"Office visit, established patient, high complexity",2026-05-08,185.99,normal
+CLM-00297,PRV-1011,PT-0381,93000,"Electrocardiogram, routine",2026-04-08,45.11,normal
+CLM-00298,PRV-1010,PT-0079,99213,"Office visit, established patient, low complexity",2026-02-18,79.51,normal
+CLM-00299,PRV-1010,PT-0226,99214,"Office visit, established patient, moderate complexity",2026-01-01,116.84,normal
+CLM-00300,PRV-1016,PT-0039,99215,"Office visit, established patient, high complexity",2026-03-09,174.61,normal
+CLM-00301,PRV-1010,PT-0175,93000,"Electrocardiogram, routine",2026-05-06,34.87,normal
+CLM-00302,PRV-1021,PT-0337,99215,"Office visit, established patient, high complexity",2026-02-10,172.63,normal
+CLM-00303,PRV-1023,PT-0303,93000,"Electrocardiogram, routine",2026-04-20,38.09,normal
+CLM-00304,PRV-1019,PT-0387,71046,"Chest X-ray, 2 views",2026-04-25,59.78,normal
+CLM-00305,PRV-1005,PT-0163,20610,"Joint injection, major joint",2026-04-22,94.02,normal
+CLM-00306,PRV-1011,PT-0208,99214,"Office visit, established patient, moderate complexity",2026-05-10,148.97,normal
+CLM-00307,PRV-1013,PT-0309,99213,"Office visit, established patient, low complexity",2026-05-11,79.39,normal
+CLM-00308,PRV-1013,PT-0387,99214,"Office visit, established patient, moderate complexity",2026-04-25,122.31,normal
+CLM-00309,PRV-1011,PT-0378,80053,Comprehensive metabolic panel,2026-05-17,40.4,normal
+CLM-00310,PRV-1013,PT-0206,20610,"Joint injection, major joint",2026-03-14,101.5,normal
+CLM-00311,PRV-1011,PT-0166,93000,"Electrocardiogram, routine",2026-03-06,44.39,normal
+CLM-00312,PRV-1021,PT-0386,71046,"Chest X-ray, 2 views",2026-02-18,59.7,normal
+CLM-00313,PRV-1010,PT-0277,80053,Comprehensive metabolic panel,2026-01-23,28.68,normal
+CLM-00314,PRV-1017,PT-0166,71046,"Chest X-ray, 2 views",2026-05-27,64.12,normal
+CLM-00315,PRV-1012,PT-0102,99213,"Office visit, established patient, low complexity",2026-05-10,103.01,normal
+CLM-00316,PRV-1010,PT-0041,71046,"Chest X-ray, 2 views",2026-04-23,54.22,normal
+CLM-00317,PRV-1024,PT-0080,71046,"Chest X-ray, 2 views",2026-01-22,64.03,normal
+CLM-00318,PRV-1019,PT-0242,99213,"Office visit, established patient, low complexity",2026-03-25,82.9,normal
+CLM-00319,PRV-1001,PT-0077,99213,"Office visit, established patient, low complexity",2026-01-14,97.86,normal
+CLM-00320,PRV-1021,PT-0359,20610,"Joint injection, major joint",2026-01-20,95.17,normal
+CLM-00321,PRV-1017,PT-0375,20610,"Joint injection, major joint",2026-01-31,112.71,normal
+CLM-00322,PRV-1007,PT-0123,99215,"Office visit, established patient, high complexity",2026-01-19,195.71,normal
+CLM-00323,PRV-1005,PT-0041,99213,"Office visit, established patient, low complexity",2026-01-08,82.4,normal
+CLM-00324,PRV-1017,PT-0318,93000,"Electrocardiogram, routine",2026-05-01,40.75,normal
+CLM-00325,PRV-1006,PT-0388,99215,"Office visit, established patient, high complexity",2026-05-15,162.04,normal
+CLM-00326,PRV-1021,PT-0127,99214,"Office visit, established patient, moderate complexity",2026-03-14,116.25,normal
+CLM-00327,PRV-1009,PT-0012,71046,"Chest X-ray, 2 views",2026-01-13,67.31,normal
+CLM-00328,PRV-1012,PT-0122,99213,"Office visit, established patient, low complexity",2026-05-11,97.28,normal
+CLM-00329,PRV-1013,PT-0221,93000,"Electrocardiogram, routine",2026-04-22,37.61,normal
+CLM-00330,PRV-1022,PT-0211,99215,"Office visit, established patient, high complexity",2026-01-25,168.75,normal
+CLM-00331,PRV-1023,PT-0202,99213,"Office visit, established patient, low complexity",2026-03-15,85.56,normal
+CLM-00332,PRV-1021,PT-0391,20610,"Joint injection, major joint",2026-01-31,97.74,normal
+CLM-00333,PRV-1020,PT-0024,20610,"Joint injection, major joint",2026-03-04,112.84,normal
+CLM-00334,PRV-1003,PT-0020,93000,"Electrocardiogram, routine",2026-02-25,41.2,normal
+CLM-00335,PRV-1017,PT-0105,99213,"Office visit, established patient, low complexity",2026-03-19,90.11,normal
+CLM-00336,PRV-1020,PT-0066,99214,"Office visit, established patient, moderate complexity",2026-03-15,135.68,normal
+CLM-00337,PRV-1003,PT-0243,71046,"Chest X-ray, 2 views",2026-04-09,67.54,normal
+CLM-00338,PRV-1021,PT-0237,80053,Comprehensive metabolic panel,2026-02-01,31.11,normal
+CLM-00339,PRV-1020,PT-0282,20610,"Joint injection, major joint",2026-02-05,116.14,normal
+CLM-00340,PRV-1015,PT-0014,71046,"Chest X-ray, 2 views",2026-01-27,59.63,volume_spike
+CLM-00341,PRV-1004,PT-0318,71046,"Chest X-ray, 2 views",2026-03-15,55.95,normal
+CLM-00342,PRV-1014,PT-0084,71046,"Chest X-ray, 2 views",2026-03-19,59.34,normal
+CLM-00343,PRV-1005,PT-0028,99213,"Office visit, established patient, low complexity",2026-02-28,78.76,normal
+CLM-00344,PRV-1000,PT-0301,93000,"Electrocardiogram, routine",2026-01-20,37.48,normal
+CLM-00345,PRV-1010,PT-0270,99214,"Office visit, established patient, moderate complexity",2026-01-12,109.42,normal
+CLM-00346,PRV-1009,PT-0257,93000,"Electrocardiogram, routine",2026-05-05,42.28,normal
+CLM-00347,PRV-1007,PT-0313,99215,"Office visit, established patient, high complexity",2026-05-23,198.49,normal
+CLM-00348,PRV-1019,PT-0175,93000,"Electrocardiogram, routine",2026-01-06,38.11,normal
+CLM-00349,PRV-1004,PT-0044,99213,"Office visit, established patient, low complexity",2026-05-07,80.28,normal
+CLM-00350,PRV-1014,PT-0251,20610,"Joint injection, major joint",2026-03-25,95.64,normal
+CLM-00351,PRV-1017,PT-0293,71046,"Chest X-ray, 2 views",2026-01-09,68.34,normal
+CLM-00352,PRV-1000,PT-0245,20610,"Joint injection, major joint",2026-02-03,101.5,normal
+CLM-00353,PRV-1000,PT-0012,99213,"Office visit, established patient, low complexity",2026-03-29,230.76,upcoding
+CLM-00354,PRV-1023,PT-0217,99215,"Office visit, established patient, high complexity",2026-01-01,180.05,normal
+CLM-00355,PRV-1024,PT-0178,20610,"Joint injection, major joint",2026-03-10,106.84,normal
+CLM-00356,PRV-1005,PT-0126,93000,"Electrocardiogram, routine",2026-01-19,35.18,normal
+CLM-00357,PRV-1009,PT-0341,93000,"Electrocardiogram, routine",2026-04-12,40.77,normal
+CLM-00358,PRV-1007,PT-0005,80053,Comprehensive metabolic panel,2026-03-08,40.64,normal
+CLM-00359,PRV-1014,PT-0119,99214,"Office visit, established patient, moderate complexity",2026-04-10,122.82,normal
+CLM-00360,PRV-1009,PT-0145,71046,"Chest X-ray, 2 views",2026-03-16,71.34,normal
+CLM-00361,PRV-1014,PT-0328,99213,"Office visit, established patient, low complexity",2026-01-05,83.82,normal
+CLM-00362,PRV-1003,PT-0287,99213,"Office visit, established patient, low complexity",2026-04-01,94.14,normal
+CLM-00363,PRV-1020,PT-0220,80053,Comprehensive metabolic panel,2026-03-28,89.56,unbundling
+CLM-00364,PRV-1008,PT-0176,99213,"Office visit, established patient, low complexity",2026-03-03,95.07,normal
+CLM-00365,PRV-1020,PT-0324,80053,Comprehensive metabolic panel,2026-02-13,97.64,unbundling
+CLM-00366,PRV-1003,PT-0082,71046,"Chest X-ray, 2 views",2026-03-07,69.45,normal
+CLM-00367,PRV-1022,PT-0129,99215,"Office visit, established patient, high complexity",2026-05-11,166.88,normal
+CLM-00368,PRV-1021,PT-0143,20610,"Joint injection, major joint",2026-01-01,99.38,normal
+CLM-00369,PRV-1006,PT-0316,20610,"Joint injection, major joint",2026-04-15,95.88,normal
+CLM-00370,PRV-1000,PT-0291,99213,"Office visit, established patient, low complexity",2026-03-23,196.96,upcoding
+CLM-00371,PRV-1002,PT-0265,71046,"Chest X-ray, 2 views",2026-04-07,68.69,normal
+CLM-00372,PRV-1007,PT-0117,99214,"Office visit, established patient, moderate complexity",2026-03-13,148.81,normal
+CLM-00373,PRV-1024,PT-0304,93000,"Electrocardiogram, routine",2026-01-23,39.79,normal
+CLM-00374,PRV-1011,PT-0343,93000,"Electrocardiogram, routine",2026-04-02,47.07,normal
+CLM-00375,PRV-1017,PT-0021,93000,"Electrocardiogram, routine",2026-05-24,39.07,normal
+CLM-00376,PRV-1022,PT-0399,20610,"Joint injection, major joint",2026-01-11,100.5,normal
+CLM-00377,PRV-1010,PT-0277,99215,"Office visit, established patient, high complexity",2026-01-10,158.06,normal
+CLM-00378,PRV-1018,PT-0373,99214,"Office visit, established patient, moderate complexity",2026-01-25,124.61,normal
+CLM-00379,PRV-1014,PT-0144,93000,"Electrocardiogram, routine",2026-03-22,34.7,normal
+CLM-00380,PRV-1017,PT-0132,99214,"Office visit, established patient, moderate complexity",2026-02-10,135.2,normal
+CLM-00381,PRV-1010,PT-0074,20610,"Joint injection, major joint",2026-04-13,97.0,normal
+CLM-00382,PRV-1006,PT-0298,20610,"Joint injection, major joint",2026-01-17,99.4,normal
+CLM-00383,PRV-1019,PT-0310,93000,"Electrocardiogram, routine",2026-01-14,37.68,normal
+CLM-00384,PRV-1023,PT-0379,80053,Comprehensive metabolic panel,2026-04-05,31.93,normal
+CLM-00385,PRV-1021,PT-0220,71046,"Chest X-ray, 2 views",2026-03-19,56.39,normal
+CLM-00386,PRV-1008,PT-0378,20610,"Joint injection, major joint",2026-04-02,111.76,normal
+CLM-00387,PRV-1009,PT-0293,99213,"Office visit, established patient, low complexity",2026-02-05,93.73,normal
+CLM-00388,PRV-1023,PT-0167,99215,"Office visit, established patient, high complexity",2026-05-08,180.56,normal
+CLM-00389,PRV-1017,PT-0242,99215,"Office visit, established patient, high complexity",2026-04-04,179.91,normal
+CLM-00390,PRV-1016,PT-0161,99215,"Office visit, established patient, high complexity",2026-05-11,169.2,normal
+CLM-00391,PRV-1016,PT-0143,71046,"Chest X-ray, 2 views",2026-01-04,59.53,normal
+CLM-00392,PRV-1006,PT-0078,99215,"Office visit, established patient, high complexity",2026-02-04,162.59,normal
+CLM-00393,PRV-1024,PT-0320,71046,"Chest X-ray, 2 views",2026-01-22,61.81,normal
+CLM-00394,PRV-1020,PT-0374,99214,"Office visit, established patient, moderate complexity",2026-03-02,133.63,normal
+CLM-00395,PRV-1008,PT-0280,99213,"Office visit, established patient, low complexity",2026-01-03,89.28,normal
+CLM-00396,PRV-1018,PT-0042,93000,"Electrocardiogram, routine",2026-04-19,40.77,normal
+CLM-00397,PRV-1012,PT-0229,71046,"Chest X-ray, 2 views",2026-02-09,74.3,normal
+CLM-00398,PRV-1002,PT-0379,99213,"Office visit, established patient, low complexity",2026-02-18,94.76,normal
+CLM-00399,PRV-1006,PT-0316,93000,"Electrocardiogram, routine",2026-03-08,33.2,normal
+CLM-00400,PRV-1004,PT-0149,93000,"Electrocardiogram, routine",2026-02-05,35.05,normal
+CLM-00401,PRV-1007,PT-0300,99214,"Office visit, established patient, moderate complexity",2026-04-13,141.75,normal
+CLM-00402,PRV-1002,PT-0215,71046,"Chest X-ray, 2 views",2026-04-11,68.68,normal
+CLM-00403,PRV-1005,PT-0286,99213,"Office visit, established patient, low complexity",2026-05-30,79.37,normal
+CLM-00404,PRV-1003,PT-0287,80053,Comprehensive metabolic panel,2026-01-27,36.95,normal
+CLM-00405,PRV-1022,PT-0121,99214,"Office visit, established patient, moderate complexity",2026-01-15,125.82,normal
+CLM-00406,PRV-1011,PT-0136,99213,"Office visit, established patient, low complexity",2026-02-15,105.72,normal
+CLM-00407,PRV-1015,PT-0348,71046,"Chest X-ray, 2 views",2026-02-05,58.66,volume_spike
+CLM-00408,PRV-1019,PT-0286,93000,"Electrocardiogram, routine",2026-02-06,37.57,normal
+CLM-00409,PRV-1005,PT-0231,71046,"Chest X-ray, 2 views",2026-01-14,60.42,normal
+CLM-00410,PRV-1011,PT-0142,71046,"Chest X-ray, 2 views",2026-01-24,71.33,normal
+CLM-00411,PRV-1022,PT-0361,99214,"Office visit, established patient, moderate complexity",2026-02-21,116.87,normal
+CLM-00412,PRV-1024,PT-0323,99213,"Office visit, established patient, low complexity",2026-03-18,87.9,normal
+CLM-00413,PRV-1022,PT-0311,99214,"Office visit, established patient, moderate complexity",2026-04-01,117.77,normal
+CLM-00414,PRV-1021,PT-0316,99215,"Office visit, established patient, high complexity",2026-03-28,170.79,normal
+CLM-00415,PRV-1009,PT-0042,93000,"Electrocardiogram, routine",2026-05-20,42.67,normal
+CLM-00416,PRV-1012,PT-0158,99215,"Office visit, established patient, high complexity",2026-04-12,207.96,normal
+CLM-00417,PRV-1002,PT-0073,20610,"Joint injection, major joint",2026-02-15,115.57,normal
+CLM-00418,PRV-1002,PT-0206,99214,"Office visit, established patient, moderate complexity",2026-01-24,145.66,normal
+CLM-00419,PRV-1009,PT-0253,99213,"Office visit, established patient, low complexity",2026-03-28,99.08,normal
+CLM-00420,PRV-1003,PT-0110,20610,"Joint injection, major joint",2026-03-15,117.77,normal
+CLM-00421,PRV-1013,PT-0390,80053,Comprehensive metabolic panel,2026-02-17,30.85,normal
+CLM-00422,PRV-1020,PT-0025,99214,"Office visit, established patient, moderate complexity",2026-01-11,130.77,normal
+CLM-00423,PRV-1012,PT-0128,93000,"Electrocardiogram, routine",2026-04-27,43.69,normal
+CLM-00424,PRV-1012,PT-0146,20610,"Joint injection, major joint",2026-03-17,118.28,normal
+CLM-00425,PRV-1005,PT-0130,80053,Comprehensive metabolic panel,2026-01-03,31.86,duplicate_billing
+CLM-00426,PRV-1005,PT-0130,80053,Comprehensive metabolic panel,2026-01-03,31.86,duplicate_billing
+CLM-00427,PRV-1018,PT-0266,80053,Comprehensive metabolic panel,2026-04-28,33.3,normal
+CLM-00428,PRV-1010,PT-0056,99214,"Office visit, established patient, moderate complexity",2026-01-09,109.05,normal
+CLM-00429,PRV-1022,PT-0149,99215,"Office visit, established patient, high complexity",2026-01-26,166.9,normal
+CLM-00430,PRV-1013,PT-0252,99215,"Office visit, established patient, high complexity",2026-01-27,171.03,normal
+CLM-00431,PRV-1003,PT-0101,20610,"Joint injection, major joint",2026-02-04,114.56,normal
+CLM-00432,PRV-1019,PT-0124,80053,Comprehensive metabolic panel,2026-04-04,33.95,normal
+CLM-00433,PRV-1017,PT-0191,20610,"Joint injection, major joint",2026-04-29,110.26,normal
+CLM-00434,PRV-1002,PT-0014,20610,"Joint injection, major joint",2026-03-20,113.85,normal
+CLM-00435,PRV-1021,PT-0386,80053,Comprehensive metabolic panel,2026-01-02,30.07,normal
+CLM-00436,PRV-1020,PT-0149,71046,"Chest X-ray, 2 views",2026-04-29,68.93,normal
+CLM-00437,PRV-1023,PT-0013,20610,"Joint injection, major joint",2026-04-03,100.44,normal
+CLM-00438,PRV-1017,PT-0338,80053,Comprehensive metabolic panel,2026-05-27,33.72,normal
+CLM-00439,PRV-1003,PT-0188,99213,"Office visit, established patient, low complexity",2026-01-17,94.02,normal
+CLM-00440,PRV-1020,PT-0117,93000,"Electrocardiogram, routine",2026-02-09,41.29,normal
+CLM-00441,PRV-1003,PT-0252,99214,"Office visit, established patient, moderate complexity",2026-02-18,135.88,normal
+CLM-00442,PRV-1002,PT-0042,99213,"Office visit, established patient, low complexity",2026-04-03,99.01,normal
+CLM-00443,PRV-1012,PT-0017,99213,"Office visit, established patient, low complexity",2026-05-24,100.55,normal
+CLM-00444,PRV-1008,PT-0048,99213,"Office visit, established patient, low complexity",2026-05-02,90.46,normal
+CLM-00445,PRV-1009,PT-0232,99214,"Office visit, established patient, moderate complexity",2026-01-06,137.58,normal
+CLM-00446,PRV-1010,PT-0214,20610,"Joint injection, major joint",2026-04-09,95.47,normal
+CLM-00447,PRV-1014,PT-0344,99213,"Office visit, established patient, low complexity",2026-01-10,84.52,normal
+CLM-00448,PRV-1004,PT-0101,93000,"Electrocardiogram, routine",2026-03-18,34.25,normal
+CLM-00449,PRV-1007,PT-0385,99213,"Office visit, established patient, low complexity",2026-04-22,95.61,normal
+CLM-00450,PRV-1023,PT-0133,99215,"Office visit, established patient, high complexity",2026-01-02,177.74,normal
+CLM-00451,PRV-1007,PT-0228,99214,"Office visit, established patient, moderate complexity",2026-03-11,142.11,normal
+CLM-00452,PRV-1014,PT-0028,99215,"Office visit, established patient, high complexity",2026-04-10,164.91,normal
+CLM-00453,PRV-1004,PT-0352,80053,Comprehensive metabolic panel,2026-04-10,30.03,normal
+CLM-00454,PRV-1009,PT-0368,71046,"Chest X-ray, 2 views",2026-01-13,72.29,normal
+CLM-00455,PRV-1007,PT-0049,99213,"Office visit, established patient, low complexity",2026-05-27,97.44,normal
+CLM-00456,PRV-1003,PT-0217,71046,"Chest X-ray, 2 views",2026-01-11,67.13,normal
+CLM-00457,PRV-1017,PT-0140,99214,"Office visit, established patient, moderate complexity",2026-04-30,130.63,normal
+CLM-00458,PRV-1001,PT-0160,71046,"Chest X-ray, 2 views",2026-03-14,75.62,normal
+CLM-00459,PRV-1001,PT-0273,99215,"Office visit, established patient, high complexity",2026-01-07,219.01,normal
+CLM-00460,PRV-1022,PT-0315,99213,"Office visit, established patient, low complexity",2026-02-25,84.81,normal
+CLM-00461,PRV-1024,PT-0213,99214,"Office visit, established patient, moderate complexity",2026-05-22,130.54,normal
+CLM-00462,PRV-1018,PT-0122,71046,"Chest X-ray, 2 views",2026-01-02,65.68,normal
+CLM-00463,PRV-1022,PT-0233,20610,"Joint injection, major joint",2026-05-07,103.59,normal
+CLM-00464,PRV-1020,PT-0126,80053,Comprehensive metabolic panel,2026-02-03,98.66,unbundling
+CLM-00465,PRV-1006,PT-0203,20610,"Joint injection, major joint",2026-04-09,93.7,normal
+CLM-00466,PRV-1021,PT-0348,99215,"Office visit, established patient, high complexity",2026-02-10,157.45,normal
+CLM-00467,PRV-1017,PT-0283,99214,"Office visit, established patient, moderate complexity",2026-01-20,137.06,normal
+CLM-00468,PRV-1014,PT-0044,99215,"Office visit, established patient, high complexity",2026-01-23,171.24,normal
+CLM-00469,PRV-1010,PT-0184,80053,Comprehensive metabolic panel,2026-03-30,30.3,normal
+CLM-00470,PRV-1021,PT-0030,99215,"Office visit, established patient, high complexity",2026-01-23,171.15,normal
+CLM-00471,PRV-1014,PT-0111,99213,"Office visit, established patient, low complexity",2026-04-25,78.65,normal
+CLM-00472,PRV-1015,PT-0003,99213,"Office visit, established patient, low complexity",2026-04-22,82.03,volume_spike
+CLM-00473,PRV-1009,PT-0010,99214,"Office visit, established patient, moderate complexity",2026-01-31,141.46,normal
+CLM-00474,PRV-1013,PT-0066,20610,"Joint injection, major joint",2026-04-03,99.05,normal
+CLM-00475,PRV-1012,PT-0086,99213,"Office visit, established patient, low complexity",2026-03-25,102.42,normal
+CLM-00476,PRV-1021,PT-0014,93000,"Electrocardiogram, routine",2026-04-22,36.56,normal
+CLM-00477,PRV-1020,PT-0243,99213,"Office visit, established patient, low complexity",2026-04-12,96.2,normal
+CLM-00478,PRV-1005,PT-0132,99215,"Office visit, established patient, high complexity",2026-05-30,164.01,normal
+CLM-00479,PRV-1009,PT-0293,71046,"Chest X-ray, 2 views",2026-03-30,70.18,normal
+CLM-00480,PRV-1021,PT-0038,20610,"Joint injection, major joint",2026-01-01,94.84,normal
+CLM-00481,PRV-1024,PT-0119,80053,Comprehensive metabolic panel,2026-01-14,35.83,normal
+CLM-00482,PRV-1013,PT-0336,99215,"Office visit, established patient, high complexity",2026-01-10,164.39,normal
+CLM-00483,PRV-1019,PT-0024,93000,"Electrocardiogram, routine",2026-01-08,38.16,normal
+CLM-00484,PRV-1017,PT-0060,99215,"Office visit, established patient, high complexity",2026-02-10,183.06,normal
+CLM-00485,PRV-1013,PT-0109,99215,"Office visit, established patient, high complexity",2026-01-09,173.19,normal
+CLM-00486,PRV-1005,PT-0192,80053,Comprehensive metabolic panel,2026-04-29,31.45,normal
+CLM-00487,PRV-1022,PT-0146,99213,"Office visit, established patient, low complexity",2026-03-07,83.3,normal
+CLM-00488,PRV-1016,PT-0303,99215,"Office visit, established patient, high complexity",2026-05-01,182.81,normal
+CLM-00489,PRV-1021,PT-0198,80053,Comprehensive metabolic panel,2026-01-27,31.64,normal
+CLM-00490,PRV-1015,PT-0198,20610,"Joint injection, major joint",2026-01-18,107.02,volume_spike
+CLM-00491,PRV-1006,PT-0325,99213,"Office visit, established patient, low complexity",2026-05-23,75.61,normal
+CLM-00492,PRV-1009,PT-0107,99214,"Office visit, established patient, moderate complexity",2026-01-25,131.54,normal
+CLM-00493,PRV-1021,PT-0365,80053,Comprehensive metabolic panel,2026-04-15,32.1,normal
+CLM-00494,PRV-1018,PT-0069,99214,"Office visit, established patient, moderate complexity",2026-05-08,131.7,normal
+CLM-00495,PRV-1004,PT-0074,93000,"Electrocardiogram, routine",2026-05-01,37.44,normal
+CLM-00496,PRV-1003,PT-0126,71046,"Chest X-ray, 2 views",2026-04-05,68.45,normal
+CLM-00497,PRV-1017,PT-0313,99215,"Office visit, established patient, high complexity",2026-03-07,177.19,normal
+CLM-00498,PRV-1008,PT-0364,71046,"Chest X-ray, 2 views",2026-02-03,64.53,normal
+CLM-00499,PRV-1019,PT-0364,99213,"Office visit, established patient, low complexity",2026-05-24,80.52,normal
+CLM-00500,PRV-1021,PT-0220,93000,"Electrocardiogram, routine",2026-02-11,36.7,normal
+CLM-00501,PRV-1009,PT-0217,71046,"Chest X-ray, 2 views",2026-03-06,70.97,normal
+CLM-00502,PRV-1011,PT-0184,99213,"Office visit, established patient, low complexity",2026-03-15,98.03,normal
+CLM-00503,PRV-1017,PT-0021,99214,"Office visit, established patient, moderate complexity",2026-03-26,131.39,normal
+CLM-00504,PRV-1000,PT-0127,99215,"Office visit, established patient, high complexity",2026-02-22,173.35,normal
+CLM-00505,PRV-1023,PT-0143,99215,"Office visit, established patient, high complexity",2026-05-25,184.37,normal
+CLM-00506,PRV-1020,PT-0376,99214,"Office visit, established patient, moderate complexity",2026-05-05,131.14,normal
+CLM-00507,PRV-1024,PT-0082,80053,Comprehensive metabolic panel,2026-05-28,33.31,normal
+CLM-00508,PRV-1022,PT-0305,99214,"Office visit, established patient, moderate complexity",2026-01-29,121.45,normal
+CLM-00509,PRV-1024,PT-0161,80053,Comprehensive metabolic panel,2026-04-02,33.33,normal
+CLM-00510,PRV-1003,PT-0327,20610,"Joint injection, major joint",2026-02-07,115.34,normal
+CLM-00511,PRV-1000,PT-0061,99213,"Office visit, established patient, low complexity",2026-05-28,220.99,upcoding
+CLM-00512,PRV-1008,PT-0017,20610,"Joint injection, major joint",2026-04-17,114.62,normal
+CLM-00513,PRV-1013,PT-0330,71046,"Chest X-ray, 2 views",2026-05-08,57.41,normal
+CLM-00514,PRV-1001,PT-0066,71046,"Chest X-ray, 2 views",2026-05-08,70.82,normal
+CLM-00515,PRV-1015,PT-0086,99215,"Office visit, established patient, high complexity",2026-04-08,168.63,volume_spike
+CLM-00516,PRV-1005,PT-0099,93000,"Electrocardiogram, routine",2026-02-23,34.26,normal
+CLM-00517,PRV-1006,PT-0383,80053,Comprehensive metabolic panel,2026-01-25,31.14,normal
+CLM-00518,PRV-1019,PT-0232,71046,"Chest X-ray, 2 views",2026-01-03,63.23,normal
+CLM-00519,PRV-1021,PT-0381,93000,"Electrocardiogram, routine",2026-05-11,35.5,normal
+CLM-00520,PRV-1016,PT-0248,20610,"Joint injection, major joint",2026-03-24,103.17,normal
+CLM-00521,PRV-1007,PT-0227,93000,"Electrocardiogram, routine",2026-03-22,42.64,normal
+CLM-00522,PRV-1019,PT-0178,20610,"Joint injection, major joint",2026-05-04,98.92,normal
+CLM-00523,PRV-1004,PT-0268,99215,"Office visit, established patient, high complexity",2026-01-30,166.3,normal
+CLM-00524,PRV-1023,PT-0164,93000,"Electrocardiogram, routine",2026-04-29,37.54,normal
+CLM-00525,PRV-1007,PT-0399,20610,"Joint injection, major joint",2026-04-07,127.15,normal
+CLM-00526,PRV-1007,PT-0268,99214,"Office visit, established patient, moderate complexity",2026-01-24,139.46,normal
+CLM-00527,PRV-1015,PT-0283,99215,"Office visit, established patient, high complexity",2026-02-24,171.61,volume_spike
+CLM-00528,PRV-1000,PT-0008,93000,"Electrocardiogram, routine",2026-01-31,40.01,normal
+CLM-00529,PRV-1015,PT-0366,99215,"Office visit, established patient, high complexity",2026-02-16,166.59,volume_spike
+CLM-00530,PRV-1011,PT-0016,99215,"Office visit, established patient, high complexity",2026-03-17,221.39,normal
+CLM-00531,PRV-1012,PT-0158,20610,"Joint injection, major joint",2026-01-19,122.6,normal
+CLM-00532,PRV-1003,PT-0223,93000,"Electrocardiogram, routine",2026-05-13,41.83,normal
+CLM-00533,PRV-1004,PT-0196,99213,"Office visit, established patient, low complexity",2026-01-14,82.48,normal
+CLM-00534,PRV-1001,PT-0133,99214,"Office visit, established patient, moderate complexity",2026-01-12,154.57,normal
+CLM-00535,PRV-1008,PT-0134,93000,"Electrocardiogram, routine",2026-05-18,42.08,normal
+CLM-00536,PRV-1011,PT-0364,99213,"Office visit, established patient, low complexity",2026-03-12,102.27,normal
+CLM-00537,PRV-1020,PT-0076,99214,"Office visit, established patient, moderate complexity",2026-05-03,132.15,normal
+CLM-00538,PRV-1015,PT-0218,80053,Comprehensive metabolic panel,2026-01-17,29.62,volume_spike
+CLM-00539,PRV-1019,PT-0338,99214,"Office visit, established patient, moderate complexity",2026-02-22,124.89,normal
+CLM-00540,PRV-1024,PT-0150,20610,"Joint injection, major joint",2026-04-04,111.13,normal
+CLM-00541,PRV-1011,PT-0347,99215,"Office visit, established patient, high complexity",2026-05-07,213.91,normal
+CLM-00542,PRV-1019,PT-0066,80053,Comprehensive metabolic panel,2026-04-12,32.2,normal
+CLM-00543,PRV-1023,PT-0201,93000,"Electrocardiogram, routine",2026-04-13,38.99,normal
+CLM-00544,PRV-1000,PT-0191,20610,"Joint injection, major joint",2026-02-11,104.17,normal
+CLM-00545,PRV-1024,PT-0191,20610,"Joint injection, major joint",2026-02-15,103.87,normal
+CLM-00546,PRV-1024,PT-0142,80053,Comprehensive metabolic panel,2026-03-03,35.93,normal
+CLM-00547,PRV-1016,PT-0252,20610,"Joint injection, major joint",2026-05-02,105.25,normal
+CLM-00548,PRV-1017,PT-0251,99215,"Office visit, established patient, high complexity",2026-05-17,177.06,normal
+CLM-00549,PRV-1001,PT-0100,71046,"Chest X-ray, 2 views",2026-03-11,72.92,normal
+CLM-00550,PRV-1002,PT-0334,99215,"Office visit, established patient, high complexity",2026-05-27,197.46,normal
+CLM-00551,PRV-1016,PT-0270,99213,"Office visit, established patient, low complexity",2026-03-05,88.26,normal
+CLM-00552,PRV-1022,PT-0083,71046,"Chest X-ray, 2 views",2026-05-09,63.83,normal
+CLM-00553,PRV-1002,PT-0284,99214,"Office visit, established patient, moderate complexity",2026-04-15,132.35,normal
+CLM-00554,PRV-1006,PT-0251,71046,"Chest X-ray, 2 views",2026-04-20,57.11,normal
+CLM-00555,PRV-1024,PT-0398,93000,"Electrocardiogram, routine",2026-04-06,38.36,normal
+CLM-00556,PRV-1020,PT-0286,80053,Comprehensive metabolic panel,2026-01-11,87.72,unbundling
+CLM-00557,PRV-1019,PT-0309,99213,"Office visit, established patient, low complexity",2026-05-04,82.65,normal
+CLM-00558,PRV-1013,PT-0068,71046,"Chest X-ray, 2 views",2026-03-31,61.63,normal
+CLM-00559,PRV-1001,PT-0086,99213,"Office visit, established patient, low complexity",2026-02-19,106.18,normal
+CLM-00560,PRV-1022,PT-0158,80053,Comprehensive metabolic panel,2026-05-06,32.59,normal
+CLM-00561,PRV-1010,PT-0255,71046,"Chest X-ray, 2 views",2026-05-09,56.54,normal
+CLM-00562,PRV-1015,PT-0172,93000,"Electrocardiogram, routine",2026-02-03,33.39,volume_spike
+CLM-00563,PRV-1008,PT-0216,93000,"Electrocardiogram, routine",2026-05-11,43.09,normal
+CLM-00564,PRV-1007,PT-0332,80053,Comprehensive metabolic panel,2026-04-15,40.44,normal
+CLM-00565,PRV-1013,PT-0147,20610,"Joint injection, major joint",2026-01-21,104.45,normal
+CLM-00566,PRV-1021,PT-0276,80053,Comprehensive metabolic panel,2026-04-05,32.12,normal
+CLM-00567,PRV-1018,PT-0348,93000,"Electrocardiogram, routine",2026-04-12,37.63,normal
+CLM-00568,PRV-1021,PT-0342,93000,"Electrocardiogram, routine",2026-03-15,34.83,normal
+CLM-00569,PRV-1023,PT-0361,99214,"Office visit, established patient, moderate complexity",2026-03-12,124.87,normal
+CLM-00570,PRV-1022,PT-0153,71046,"Chest X-ray, 2 views",2026-01-11,57.92,normal
+CLM-00571,PRV-1011,PT-0136,71046,"Chest X-ray, 2 views",2026-01-07,72.23,normal
+CLM-00572,PRV-1009,PT-0109,99213,"Office visit, established patient, low complexity",2026-03-09,95.45,normal
+CLM-00573,PRV-1007,PT-0237,71046,"Chest X-ray, 2 views",2026-04-02,71.95,normal
+CLM-00574,PRV-1016,PT-0049,80053,Comprehensive metabolic panel,2026-03-22,31.32,normal
+CLM-00575,PRV-1007,PT-0353,99215,"Office visit, established patient, high complexity",2026-05-07,202.01,normal
+CLM-00576,PRV-1020,PT-0318,80053,Comprehensive metabolic panel,2026-03-27,79.72,unbundling
+CLM-00577,PRV-1008,PT-0305,99213,"Office visit, established patient, low complexity",2026-05-03,93.82,normal
+CLM-00578,PRV-1023,PT-0183,80053,Comprehensive metabolic panel,2026-02-21,34.85,normal
+CLM-00579,PRV-1012,PT-0395,99215,"Office visit, established patient, high complexity",2026-01-07,195.95,normal
+CLM-00580,PRV-1013,PT-0108,80053,Comprehensive metabolic panel,2026-03-01,32.71,normal
+CLM-00581,PRV-1007,PT-0268,80053,Comprehensive metabolic panel,2026-04-18,39.52,normal
+CLM-00582,PRV-1000,PT-0250,80053,Comprehensive metabolic panel,2026-04-18,34.43,normal
+CLM-00583,PRV-1024,PT-0158,99215,"Office visit, established patient, high complexity",2026-01-01,178.14,normal
+CLM-00584,PRV-1022,PT-0338,99213,"Office visit, established patient, low complexity",2026-04-01,82.33,normal
+CLM-00585,PRV-1003,PT-0082,71046,"Chest X-ray, 2 views",2026-05-01,64.2,normal
+CLM-00586,PRV-1014,PT-0113,93000,"Electrocardiogram, routine",2026-03-24,34.63,normal
+CLM-00587,PRV-1018,PT-0258,20610,"Joint injection, major joint",2026-04-23,109.57,normal
+CLM-00588,PRV-1008,PT-0331,99214,"Office visit, established patient, moderate complexity",2026-02-24,135.27,normal
+CLM-00589,PRV-1013,PT-0201,99214,"Office visit, established patient, moderate complexity",2026-01-21,120.12,normal
+CLM-00590,PRV-1002,PT-0117,93000,"Electrocardiogram, routine",2026-04-06,44.51,normal
+CLM-00591,PRV-1005,PT-0296,99215,"Office visit, established patient, high complexity",2026-03-22,171.22,normal
+CLM-00592,PRV-1011,PT-0311,99215,"Office visit, established patient, high complexity",2026-03-09,212.71,normal
+CLM-00593,PRV-1004,PT-0127,80053,Comprehensive metabolic panel,2026-05-02,30.9,normal
+CLM-00594,PRV-1022,PT-0277,99213,"Office visit, established patient, low complexity",2026-01-11,86.01,normal
+CLM-00595,PRV-1017,PT-0375,93000,"Electrocardiogram, routine",2026-04-11,40.47,normal
+CLM-00596,PRV-1005,PT-0364,99214,"Office visit, established patient, moderate complexity",2026-03-30,120.06,normal
+CLM-00597,PRV-1011,PT-0023,20610,"Joint injection, major joint",2026-04-24,123.23,normal
+CLM-00598,PRV-1015,PT-0118,99214,"Office visit, established patient, moderate complexity",2026-02-25,122.33,volume_spike
+CLM-00599,PRV-1006,PT-0007,99214,"Office visit, established patient, moderate complexity",2026-01-26,108.73,normal
+CLM-00600,PRV-1023,PT-0148,99213,"Office visit, established patient, low complexity",2026-02-21,85.01,normal
+CLM-00601,PRV-1009,PT-0126,93000,"Electrocardiogram, routine",2026-02-26,42.9,normal
+CLM-00602,PRV-1016,PT-0392,71046,"Chest X-ray, 2 views",2026-05-08,60.35,normal
+CLM-00603,PRV-1019,PT-0031,93000,"Electrocardiogram, routine",2026-03-25,38.2,normal
+CLM-00604,PRV-1012,PT-0376,99214,"Office visit, established patient, moderate complexity",2026-03-14,149.79,normal
