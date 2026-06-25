@@ -43,10 +43,10 @@ with st.spinner("Fitting anomaly detection model on historical claims..."):
 agent3 = get_reasoning_agent()
 
 if agent3.is_live:
-    st.success("🟢 **Live mode** — Agent 3 is calling Claude directly for reasoning and follow-up Q&A.")
+    st.success("🟢 **Live mode** — Agent 3 is calling OpenAI directly for reasoning and follow-up Q&A.")
 else:
     st.warning(
-        "📄 **Template mode** — no `ANTHROPIC_API_KEY` detected in your environment. "
+        "📄 **Template mode** — no `OPENAI_API_KEY` detected in your environment. "
         "Agent 3 is using deterministic templates instead of a live model call. "
         "Set the env var and restart `streamlit run app.py` to enable live reasoning + chat."
     )
@@ -197,7 +197,7 @@ with tab2:
             scored["predicted_category"] = Classifier.classify(scored)
             st.write(f"&nbsp;&nbsp;→ category: `{scored['predicted_category']}`")
 
-            mode_note = "live Claude call" if agent3.is_live else "template fallback — set ANTHROPIC_API_KEY for a live call"
+            mode_note = "live OpenAI call" if agent3.is_live else "template fallback — set OPENAI_API_KEY for a live call"
             st.write(f"🧠 **Agent 3 — Reasoning Agent**: drafting investigation summary ({mode_note})...")
             time.sleep(0.5)
             scored["investigation_summary"] = agent3.run(scored)
