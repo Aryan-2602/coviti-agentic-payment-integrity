@@ -20,7 +20,7 @@ Two entry points:
     user-submitted claim live, against the same fitted model -- this is
     what powers the "Submit a New Claim" tab in app.py.
 
-If ANTHROPIC_API_KEY is not set, Agent 3 falls back to a deterministic
+If OPENAI_API_KEY is not set, Agent 3 falls back to a deterministic
 template so the whole pipeline still runs end-to-end without an API key.
 """
 import os
@@ -129,15 +129,15 @@ class ReasoningAgent:
     """Agent 3: chains Agent 1 + Agent 2 evidence into a written recommendation,
     and can field free-form follow-up questions about a claim it has already reviewed."""
 
-    MODEL = "claude-sonnet-4-6"
+    MODEL = "gpt-4o-mini"
 
     def __init__(self):
-        self.api_key = os.environ.get("ANTHROPIC_API_KEY")
+        self.api_key = os.environ.get("OPENAI_API_KEY")
         self.client = None
         if self.api_key:
             try:
-                import anthropic
-                self.client = anthropic.Anthropic(api_key=self.api_key)
+                import openai
+                self.client = openai.OpenAI(api_key=self.api_key)
             except ImportError:
                 self.client = None
 
@@ -203,11 +203,11 @@ class ReasoningAgent:
             "Be specific and cite the numeric evidence.\n\n" + self._claim_context(claim)
         )
         try:
-            resp = self.client.messages.create(
+            resp = self.client.chat.completions.create(
                 model=self.MODEL, max_tokens=300,
                 messages=[{"role": "user", "content": prompt}],
             )
-            return resp.content[0].text
+            return resp.choices[0].message.content
         except Exception as e:
             return self._template_reasoning(claim) + f"\n\n[Live LLM call failed, used fallback: {e}]"
 
@@ -217,8 +217,8 @@ class ReasoningAgent:
         in this conversation, so the agent keeps context across follow-ups."""
         if self.client is None:
             return (
-                "Live follow-up Q&A needs an ANTHROPIC_API_KEY in your environment. "
-                "With a key set, this question would be sent to Claude with the full claim "
+                "Live follow-up Q&A needs an OPENAI_API_KEY in your environment. "
+                "With a key set, this question would be sent to the model with the full claim "
                 "context and prior conversation, so it can reason about specifics like "
                 "what documentation to request or why this pattern triggered a flag."
             )
@@ -229,14 +229,14 @@ class ReasoningAgent:
             "question directly and specifically, grounded in the evidence given. Keep answers "
             "to 2-4 sentences unless more detail is clearly needed.\n\n" + self._claim_context(claim)
         )
-        messages = [{"role": "user", "content": system_context}, {"role": "assistant", "content": "Understood, I have the claim context."}]
+        messages = [{"role": "system", "content": system_context}]
         if history:
             messages.extend(history)
         messages.append({"role": "user", "content": question})
 
         try:
-            resp = self.client.messages.create(model=self.MODEL, max_tokens=300, messages=messages)
-            return resp.content[0].text
+            resp = self.client.chat.completions.create(model=self.MODEL, max_tokens=300, messages=messages)
+            return resp.choices[0].message.content
         except Exception as e:
             return f"Live call failed: {e}"
 
