@@ -12,35 +12,110 @@ from agents import run_pipeline, Classifier, ReasoningAgent
 
 st.set_page_config(page_title="Payment Integrity Multi-Agent Demo", layout="wide")
 
-st.title("🩺 Agentic Claims Investigation Copilot")
-st.caption(
-    "A 3-agent pipeline for healthcare payment integrity — anomaly detection → "
-    "classification → LLM reasoning agent. All data is synthetic; no real patient or provider data is used."
-)
+REQUIRED_COLUMNS = ["provider_id", "patient_id", "procedure_code", "procedure_desc",
+                    "claim_date", "billing_amount"]
+
+# ---------------------------------------------------------------- session state init
+
+if "data_ready" not in st.session_state:
+    st.session_state.data_ready = False
 
 
-# ---------------------------------------------------------------- pipeline setup
+# ---------------------------------------------------------------- landing screen
 
-@st.cache_data
-def load_raw_data():
-    return generate_claims()
+if not st.session_state.data_ready:
+    st.title("🩺 Agentic Claims Investigation Copilot")
+    st.caption(
+        "A 3-agent pipeline for healthcare payment integrity — anomaly detection → "
+        "classification → LLM reasoning agent. All synthetic-data runs use no real "
+        "patient or provider data."
+    )
+    st.divider()
+
+    st.subheader("Choose a dataset to get started")
+
+    left_col, right_col = st.columns(2, gap="large")
+
+    with left_col:
+        st.markdown("#### Option A — Demo dataset")
+        st.write("Load a pre-built synthetic dataset of **604 claims** across 25 providers, "
+                 "with injected upcoding, duplicate billing, and unbundling patterns.")
+        if st.button("▶ Use demo dataset", use_container_width=True, type="primary"):
+            st.session_state.raw_df = generate_claims()
+            st.session_state.data_ready = True
+            st.rerun()
+
+    with right_col:
+        st.markdown("#### Option B — Upload your own CSV")
+        st.write("Upload a claims file. Required columns:")
+        st.code(", ".join(REQUIRED_COLUMNS), language=None)
+
+        uploaded = st.file_uploader("Upload claims CSV", type=["csv"],
+                                    label_visibility="collapsed")
+        if uploaded is not None:
+            try:
+                user_df = pd.read_csv(uploaded, dtype={"procedure_code": str})
+            except Exception as e:
+                st.error(f"Could not parse CSV: {e}")
+                user_df = None
+
+            if user_df is not None:
+                missing = [c for c in REQUIRED_COLUMNS if c not in user_df.columns]
+                if missing:
+                    st.error(f"Missing required column(s): **{', '.join(missing)}**. "
+                             "Please fix your file and re-upload.")
+                else:
+                    # auto-generate claim_id if absent so the dashboard works
+                    if "claim_id" not in user_df.columns:
+                        user_df.insert(0, "claim_id",
+                                       [f"CLM-{i+1:05d}" for i in range(len(user_df))])
+                    st.success(f"File looks good — {len(user_df):,} rows detected.")
+                    st.dataframe(user_df.head(5), use_container_width=True, hide_index=True)
+                    if st.button("✅ Confirm and load this dataset",
+                                 use_container_width=True, type="primary"):
+                        st.session_state.raw_df = user_df
+                        st.session_state.data_ready = True
+                        st.rerun()
+
+    st.stop()
 
 
-@st.cache_resource
-def get_pipeline():
-    """Fits the detector once per session and scores the historical batch."""
-    raw = load_raw_data()
-    return run_pipeline(raw)  # (scored_df, fitted_detector)
-
+# ---------------------------------------------------------------- pipeline setup (once per dataset)
 
 @st.cache_resource
 def get_reasoning_agent():
     return ReasoningAgent()
 
 
-with st.spinner("Fitting anomaly detection model on historical claims..."):
-    df, detector = get_pipeline()
+if "scored_df" not in st.session_state:
+    with st.spinner("Fitting anomaly detection model on historical claims..."):
+        scored_df, detector = run_pipeline(st.session_state.raw_df)
+    st.session_state.scored_df = scored_df
+    st.session_state.detector = detector
+
+df = st.session_state.scored_df
+detector = st.session_state.detector
 agent3 = get_reasoning_agent()
+
+flagged = df[df["is_flagged"]].sort_values("anomaly_score", ascending=False)
+
+
+# ---------------------------------------------------------------- persistent header
+
+header_left, header_right = st.columns([5, 1])
+with header_left:
+    st.title("🩺 Agentic Claims Investigation Copilot")
+    st.caption(
+        "A 3-agent pipeline for healthcare payment integrity — anomaly detection → "
+        "classification → LLM reasoning agent. All data is synthetic; no real patient or provider data is used."
+    )
+with header_right:
+    st.write("")  # vertical nudge
+    st.write("")
+    if st.button("↺ Change dataset", use_container_width=True):
+        for key in ("data_ready", "raw_df", "scored_df", "detector"):
+            st.session_state.pop(key, None)
+        st.rerun()
 
 if agent3.is_live:
     st.success("🟢 **Live mode** — Agent 3 is calling OpenAI directly for reasoning and follow-up Q&A.")
@@ -50,8 +125,6 @@ else:
         "Agent 3 is using deterministic templates instead of a live model call. "
         "Set the env var and restart `streamlit run app.py` to enable live reasoning + chat."
     )
-
-flagged = df[df["is_flagged"]].sort_values("anomaly_score", ascending=False)
 
 
 # ---------------------------------------------------------------- shared claim detail + chat UI
@@ -177,8 +250,6 @@ with tab2:
         with st.status("Running multi-agent investigation...", expanded=True) as status:
             st.write("🔍 **Agent 1 — Anomaly Detector**: scoring against the peer billing rate for this procedure...")
             time.sleep(0.5)
-            # simulate the extra same-day repeats by inserting throwaway duplicate rows
-            # into the detector's lookup history so Agent 1 actually counts them
             if same_day_repeat > 1:
                 extra_rows = pd.DataFrame([{
                     "provider_id": provider_id, "patient_id": patient_id,
@@ -205,7 +276,6 @@ with tab2:
             status.update(label="✅ Investigation complete", state="complete", expanded=True)
 
         st.session_state["last_live_claim"] = scored
-        # fresh chat thread for each new submission
         st.session_state.pop(f"chat_live_{new_id}", None)
 
     if "last_live_claim" in st.session_state:
