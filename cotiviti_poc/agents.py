@@ -242,14 +242,13 @@ class ReasoningAgent:
 
 
 def run_pipeline(df: pd.DataFrame):
-    """Orchestrator: chains all three agents sequentially over a batch (startup dashboard data).
+    """Orchestrator: runs Agent 1 and Agent 2 over a batch.
+    Agent 3 is called lazily from the UI when a specific claim is selected.
     Returns (scored_df, fitted_detector) -- the fitted detector is reused to score new,
     user-submitted claims live in the 'Submit a New Claim' tab."""
     detector = AnomalyDetector()
     df = detector.fit(df)
     df = Classifier().run(df)
-    agent3 = ReasoningAgent()
-    df["investigation_summary"] = df.apply(lambda r: agent3.run(r.to_dict()), axis=1)
     return df, detector
 
 
@@ -260,5 +259,3 @@ if __name__ == "__main__":
     print(f"Flagged {len(flagged)} of {len(result)} claims.\n")
     for _, row in flagged.head(3).iterrows():
         print(f"--- {row['claim_id']} ({row['predicted_category']}) ---")
-        print(row["investigation_summary"])
-        print()

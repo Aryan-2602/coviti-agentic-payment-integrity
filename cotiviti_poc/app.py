@@ -15,6 +15,20 @@ st.set_page_config(page_title="Payment Integrity Multi-Agent Demo", layout="wide
 REQUIRED_COLUMNS = ["provider_id", "patient_id", "procedure_code", "procedure_desc",
                     "claim_date", "billing_amount"]
 
+
+# ---------------------------------------------------------------- process-level cache (demo only)
+
+@st.cache_resource
+def get_demo_pipeline():
+    """Fits + scores the fixed synthetic dataset once per app process."""
+    return run_pipeline(generate_claims())
+
+
+@st.cache_resource
+def get_reasoning_agent():
+    return ReasoningAgent()
+
+
 # ---------------------------------------------------------------- session state init
 
 if "data_ready" not in st.session_state:
@@ -41,7 +55,9 @@ if not st.session_state.data_ready:
         st.write("Load a pre-built synthetic dataset of **604 claims** across 25 providers, "
                  "with injected upcoding, duplicate billing, and unbundling patterns.")
         if st.button("▶ Use demo dataset", use_container_width=True, type="primary"):
-            st.session_state.raw_df = generate_claims()
+            scored_df, detector = get_demo_pipeline()
+            st.session_state.scored_df = scored_df
+            st.session_state.detector = detector
             st.session_state.data_ready = True
             st.rerun()
 
@@ -80,12 +96,7 @@ if not st.session_state.data_ready:
     st.stop()
 
 
-# ---------------------------------------------------------------- pipeline setup (once per dataset)
-
-@st.cache_resource
-def get_reasoning_agent():
-    return ReasoningAgent()
-
+# ---------------------------------------------------------------- pipeline setup (once per uploaded CSV)
 
 if "scored_df" not in st.session_state:
     with st.spinner("Fitting anomaly detection model on historical claims..."):
@@ -97,7 +108,25 @@ df = st.session_state.scored_df
 detector = st.session_state.detector
 agent3 = get_reasoning_agent()
 
+if "summary_cache" not in st.session_state:
+    st.session_state.summary_cache = {}
+
 flagged = df[df["is_flagged"]].sort_values("anomaly_score", ascending=False)
+
+
+def get_or_generate_summary(claim: dict, agent3) -> str:
+    cid = claim["claim_id"]
+    if cid in st.session_state.summary_cache:
+        return st.session_state.summary_cache[cid]
+    if not claim["is_flagged"]:
+        result = "No anomaly detected; claim processed normally."
+        st.session_state.summary_cache[cid] = result
+        return result
+    print(f"[Agent 3] fresh call for {cid}", flush=True)
+    with st.spinner("Agent 3 reasoning..."):
+        result = agent3.run(claim)
+    st.session_state.summary_cache[cid] = result
+    return result
 
 
 # ---------------------------------------------------------------- persistent header
@@ -113,7 +142,7 @@ with header_right:
     st.write("")  # vertical nudge
     st.write("")
     if st.button("↺ Change dataset", use_container_width=True):
-        for key in ("data_ready", "raw_df", "scored_df", "detector"):
+        for key in ("data_ready", "raw_df", "scored_df", "detector", "summary_cache"):
             st.session_state.pop(key, None)
         st.rerun()
 
@@ -141,7 +170,7 @@ def render_claim_detail(claim: dict, key_prefix: str):
         st.write(f"Predicted category: `{claim['predicted_category']}`")
     with c2:
         st.markdown("**Agent 3 — Reasoning Agent** (investigation summary)")
-        st.info(claim.get("investigation_summary", "Not yet reviewed."))
+        st.info(get_or_generate_summary(claim, agent3))
 
     st.markdown("**💬 Ask Agent 3 a follow-up question about this claim**")
     hist_key = f"chat_{key_prefix}"
@@ -272,6 +301,7 @@ with tab2:
             st.write(f"🧠 **Agent 3 — Reasoning Agent**: drafting investigation summary ({mode_note})...")
             time.sleep(0.5)
             scored["investigation_summary"] = agent3.run(scored)
+            st.session_state.summary_cache[scored["claim_id"]] = scored["investigation_summary"]
 
             status.update(label="✅ Investigation complete", state="complete", expanded=True)
 
