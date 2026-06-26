@@ -1,10 +1,23 @@
-# Agentic Payment Integrity — Cotiviti Intern Assessment POC
+# Agentic Payment Integrity — Cotiviti Intern Assessment
 
 **Option 2:** Clinical Decision Making and Pattern Recognition in Health Care
 (Agentic Generative AI, Classification, Anomaly Detection for Treatment,
 Payment, & Operations)
 
-## What this is
+---
+
+## Deliverables
+
+| File | Description |
+|------|-------------|
+| `Cotiviti_Report_Aryan_Maheshwari.docx` | Written report covering approach, architecture, and findings |
+| `Cotiviti_Slides_Aryan_Maheshwari.pptx` | Presentation slides |
+| `2026-06-25 17-50-17.mov` | Demo video walkthrough of the live app |
+| `cotiviti_poc/` | Fully working Streamlit POC (see below) |
+
+---
+
+## POC — Agentic Claims Investigation Copilot
 
 A 3-agent pipeline showing how agentic GenAI could support payment integrity
 and claims investigation workflows:
@@ -25,7 +38,7 @@ and claims investigation workflows:
 All claims data is **synthetic** — generated in `cotiviti_poc/generate_data.py`
 — so there is no PHI or real provider data anywhere in this repo.
 
-## Running the app
+### Running the app
 
 ```bash
 cd cotiviti_poc
@@ -48,7 +61,7 @@ full pipeline runs end-to-end with zero API cost. The app shows a green
 **Live mode** or amber **Template mode** badge so it's always clear which
 is active.
 
-## Repo layout
+### POC file layout
 
 ```
 cotiviti_poc/
