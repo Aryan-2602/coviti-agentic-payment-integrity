@@ -12,7 +12,7 @@ Payment, & Operations)
 |------|-------------|
 | `Cotiviti_Report_Aryan_Maheshwari.docx` | Written report covering approach, architecture, and findings |
 | `Cotiviti_Slides_Aryan_Maheshwari.pptx` | Presentation slides |
-| `2026-06-25 17-50-17.mov` | Demo video walkthrough of the live app |
+| `cotiviti-demo.mp4` | Demo video walkthrough of the live app |
 | `cotiviti_poc/` | Fully working Streamlit POC (see below) |
 
 ---
